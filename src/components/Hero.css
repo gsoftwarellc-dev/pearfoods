@@ -3,7 +3,7 @@
   height: 100svh;
   min-height: 100vh;
   min-height: 100svh;
-  padding-top: 64px;
+  padding-top: 72px;
   overflow: hidden;
 }
 
@@ -159,7 +159,7 @@
 /* Background photo layer */
 .hero-ift-photo {
   position: absolute;
-  top: 64px;
+  top: 72px;
   right: clamp(24px, 5vw, 80px);
   bottom: 64px;
   width: min(48vw, 680px);
