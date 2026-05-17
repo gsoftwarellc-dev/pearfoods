@@ -49,11 +49,10 @@ export default function Science() {
           </div>
           <div className="science-action-col">
             <div className="science-action-bar fade-up">
-              <div>
-                <h3>The Ten Tests — Test-by-Test <em>Summary ?</em></h3>
-                <div className="science-action-divider" />
-                <p>To get the complete summary, request a meeting.</p>
-              </div>
+              <span className="science-action-eyebrow">Test-by-Test Summary</span>
+              <h3>The Ten<br />Tests</h3>
+              <div className="science-action-divider" />
+              <p>Ten independent analytical methods. One coherent conclusion. Request a meeting to receive the complete test-by-test summary.</p>
               <a href="#contact" className="science-action-button" onClick={scroll}>Request a Meeting →</a>
             </div>
           </div>
