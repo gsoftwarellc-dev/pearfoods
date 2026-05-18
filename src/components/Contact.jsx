@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import './Contact.css'
 
-const FORMSPREE_URL = 'https://formspree.io/f/YOUR_FORM_ID'
-
 const categories = [
   'Functional / Metabolic Nutrition',
   'Sports & Active Nutrition',
@@ -44,31 +42,24 @@ export default function Contact() {
     return e
   }
 
-  const handleSubmit = async e => {
+  const handleSubmit = e => {
     e.preventDefault()
     const errs = validate()
     if (Object.keys(errs).length) { setErrors(errs); return }
     setSending(true)
-    try {
-      const res = await fetch(FORMSPREE_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({
-          ...form,
-          _subject: 'New Meeting Request — Pear Foods',
-          _replyto: form.email,
-        }),
-      })
-      if (res.ok) {
-        setSubmitted(true)
-      } else {
-        throw new Error()
-      }
-    } catch {
-      alert('Something went wrong. Please email us directly at hello@pearfoods.com')
-    } finally {
-      setSending(false)
-    }
+    const body = [
+      `Name: ${form.firstName} ${form.lastName}`,
+      `Company: ${form.company}`,
+      `Title: ${form.jobTitle}`,
+      `Address: ${form.companyAddress}`,
+      `Email: ${form.email}`,
+      `Phone: ${form.phone}`,
+      `Category: ${form.category}`,
+      `Message: ${form.message}`,
+    ].join('\n')
+    const mailto = `mailto:hello@pearfoods.com?subject=${encodeURIComponent('New Meeting Request — Pear Foods')}&body=${encodeURIComponent(body)}`
+    window.location.href = mailto
+    setTimeout(() => { setSubmitted(true); setSending(false) }, 500)
   }
 
   const inputClass = field => `contact-input${errors[field] ? ' input-error' : ''}`
@@ -85,9 +76,10 @@ export default function Contact() {
             </h2>
           </div>
           <p className="contact-sub fade-up">
-            Request a meeting with our team. Email us at:
+            Request a meeting with our team.
           </p>
           <div className="contact-email-line fade-up">
+            <span className="contact-email-label">Email us at:</span>
             <a href="mailto:hello@pearfoods.com">hello@pearfoods.com</a>
           </div>
 

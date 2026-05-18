@@ -46,7 +46,6 @@ export default function About() {
             <p className="about-body fade-up">Our proprietary process preserves the essential macro structure of the whole legume: all essential amino acids intact, antinutritional factors inactivated. The result is a ready-to-consume ingredient validated across ten independent analytical methods.</p>
             <p className="about-body fade-up">Pear Foods occupies the intersection no isolate or concentrate technology can reach: the nutritional completeness of a whole food, the digestibility of a processed ingredient, and the metabolic architecture that mechanistically aligns with pathways known to support satiety and glycemic response — delivered as a minimally processed, clean-label, ready-to-consume ingredient.</p>
             <div className="mission-block fade-up">
-              <span className="eyebrow" style={{ color: 'var(--g-400)' }}>Mission</span>
               <p>Pear Foods is creating a new generation of clean-label, matrix-preserved protein ingredients that nourish people while working in harmony with the planet. By unlocking the power of abundant and sustainable legumes, we aim to help build a healthier, more resilient global food system for future generations.</p>
             </div>
           </div>

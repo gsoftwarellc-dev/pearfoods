@@ -10,7 +10,7 @@ const cards = [
   {
     num: '02',
     title: 'Satiety and Glycemic Response Support Through Food Structure',
-    body: 'The Pear Foods Legume Protein Technology processed legume achieves something that the industry has not achieved: high bioavailability inside a preserved macro structure that mechanistically aligned with pathways known to support satiety and glycemic response. GLP-1 effects require direct human validation.',
+    body: 'The Pear Foods Legume Protein Technology processed legume achieves something that the industry has not achieved: high bioavailability inside a preserved macro structure that mechanistically aligned with pathways known to support satiety and glycemic response.',
   },
   {
     num: '03',

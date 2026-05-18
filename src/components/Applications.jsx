@@ -15,7 +15,7 @@ const apps = [
   {
     icon: '🌿',
     title: 'Plant-Based & Clean-Label CPG',
-    body: 'An ingredient a consumer can understand, a nutritionist can endorse, and a brand manager can put on a front-of-pack claim. No extraction. No fractionation. No additives.',
+    body: 'An ingredient a consumer can understand, a nutritionist can endorse, and a brand manager can put on a front-of-pack claim. No extraction. No fractionation. No additives. Clean-label.',
   },
 ]
 

@@ -16,6 +16,14 @@
 }
 .ingredient-body { font-size: 17px; color: var(--ink-2); line-height: 1.8; margin-bottom: 20px; }
 
+.attr-list-heading {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  margin-top: 24px;
+}
 .attr-list { list-style: none; margin-top: 12px; }
 .attr-list li {
   display: flex; align-items: flex-start; gap: 12px;

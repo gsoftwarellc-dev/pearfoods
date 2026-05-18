@@ -15,7 +15,7 @@ export default function Footer() {
             <a href="#home" className="footer-logo" onClick={e => scroll(e, '#home')}>
               <img src={logoUrl} alt="Pear Foods" />
             </a>
-            <p>Legume Protein Technology. Preserving what whole foods have always contained, and delivering it in a form the modern food system can use.</p>
+            <p>Legume Protein Technology — preserving nature's nutritional integrity to nourish people and build a more resilient, sustainable food system for the planet.</p>
           </div>
           <div className="footer-col">
             <h4>Platform</h4>

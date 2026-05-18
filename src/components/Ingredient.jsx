@@ -38,11 +38,12 @@ export default function Ingredient() {
       <div className="container">
         <span className="eyebrow">The Ingredient</span>
         <h2 className="section-title fade-up">A whole food that performs<br /><em>like a functional ingredient.</em></h2>
-        <p className="section-lead fade-up">Ready-to-use. Clean label. Preserved fiber. Proven digestibility. The metabolic architecture of a whole food — delivered in a format the food industry can use.</p>
+        <p className="section-lead fade-up">Ready-to-use. Clean label. Preserved fiber. Proven digestibility.</p>
 
         <div className="ingredient-grid fade-up">
           <div className="ingredient-copy">
             <p className="ingredient-body">The result of our proprietary process is an ingredient that is compositionally near-identical to the whole raw legume — protein, fiber, starch, essential amino acids, micronutrients, all present — with the antinutritional barriers removed, the digestive tolerability dramatically improved, and the clean-label status intact.</p>
+            <h4 className="attr-list-heading">Ingredient Feature List — Based on Red Lentil</h4>
             <ul className="attr-list">
               {attrs.map((a, i) => (
                 <li key={i}>
