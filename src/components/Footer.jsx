@@ -38,7 +38,6 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <p>© 2026 Pear Foods. Proprietary &amp; Confidential. All rights reserved.</p>
-          <p>Legume Protein Technology</p>
         </div>
         <p className="footer-disclaimer">
           * GLP-1 validation needed. No statements on this website are intended to diagnose, treat, cure, or prevent any disease. All analytical data is from independent laboratory testing. Pear Foods — Proprietary &amp; Confidential.

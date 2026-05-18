@@ -10,12 +10,12 @@ const cards = [
   {
     num: '02',
     title: 'Satiety and Glycemic Response Support Through Food Structure',
-    body: 'The Pear Foods Legume Protein Technology achieves something the industry has not achieved: high bioavailability inside a preserved macro structure that mechanistically aligns with pathways known to support satiety and glycemic response. GLP-1 effects require direct human validation.',
+    body: 'The Pear Foods Legume Protein Technology processed legume achieves something that the industry has not achieved: high bioavailability inside a preserved macro structure that mechanistically aligned with pathways known to support satiety and glycemic response. GLP-1 effects require direct human validation.',
   },
   {
     num: '03',
     title: 'Clean Label by Design, Not Exception',
-    body: 'No chemical extraction. No fractionation. No isolating agents. No additives. Aligned with clean label, minimally processed principles — because we never added anything.',
+    body: 'No chemical extraction. No fractionation. No isolating agents. No additives. Aligned with clean label, minimally processed principles.',
   },
   {
     num: '04',

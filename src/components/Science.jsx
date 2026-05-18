@@ -2,11 +2,11 @@ import { useEffect, useRef } from 'react'
 import './Science.css'
 
 const methods = [
-  { num: '01 · Dumas Nitrogen Analysis', title: '100% Protein Retention', badge: 'Zero processing loss', body: 'The global regulatory standard for protein quantification confirms zero protein loss during processing. Independently corroborated by proximate analysis. Every downstream claim rests on this foundation.' },
+  { num: '01 · Dumas Nitrogen Analysis', title: '100% Protein Retention', badge: 'Zero processing loss', body: 'The global regulatory standard for protein quantification confirms zero protein loss during processing. Independently corroborated by proximate analysis.' },
   { num: '02 · PDCAAS In Vitro Digestibility', title: '87% Digestibility Score', badge: 'Top of whole-food range', body: '87% PDCAAS for red lentils — at the top of the in vitro digestibility scores for whole legumes, achieved inside a preserved food matrix without extraction.' },
-  { num: '03 · PDCAAS Amino Acid Profile', title: 'All Essential AAs Intact', badge: 'Including lysine', body: 'Every essential amino acid — including lysine, the first casualty of heat processing — is preserved identically to the raw control. Leucine and arginine remain intact.' },
-  { num: '08 · Antinutritional Factor Panel', title: 'Near-Complete ANF Inactivation', badge: '93.6% trypsin reduction', body: 'Trypsin inhibitor −93.6%. Phytic acid −41.5%. Tannins −35.9%. All without chemical treatment. Primary bioavailability barriers eliminated. Clean-label standard maintained.' },
-  { num: '09 · Carbohydrate Fraction', title: 'Oligosaccharide Reduction', badge: 'Raffinose −75%', body: 'Raffinose −75%. Stachyose −39.2%. Verbascose −58.3%. Gas-forming fraction dramatically reduced. Total starch unchanged at 41.0g/100g. Matrix preserved; bloating reduced.' },
+  { num: '03 · PDCAAS Amino Acid Profile', title: 'All Essential Amino Acids Intact', badge: 'Including lysine', body: 'Every essential amino acid — including lysine, the first casualty of heat processing — is preserved identically to the raw control. Leucine and arginine remain intact.' },
+  { num: '04 · Antinutritional Factor Panel', title: 'Near-Complete ANF Inactivation', badge: '93.6% trypsin reduction', body: 'Trypsin inhibitor −93.6%. Phytic acid −41.5%. Tannins −35.9%. All without chemical treatment. Primary bioavailability barriers eliminated. Clean-label standard maintained.' },
+  { num: '05 · Carbohydrate Fraction', title: 'Oligosaccharide Reduction', badge: 'Raffinose −75%', body: 'Raffinose −75%. Stachyose −39.2%. Verbascose −58.3%. Gas-forming fraction dramatically reduced. Total starch unchanged at 41.0g/100g. Matrix preserved; bloating reduced.' },
 ]
 
 const mechs = [
@@ -72,7 +72,7 @@ export default function Science() {
             <div className="method-card-cta-icon">🔬</div>
             <h3>5 More Methods</h3>
             <p>SEM imaging, FTIR spectroscopy, water extraction, proximate analysis &amp; more. Full summary available on request.</p>
-            <a href="#contact" className="btn-primary btn-sm" onClick={scroll}>Request the Full Report →</a>
+            <a href="#contact" className="btn-primary btn-sm" onClick={scroll}>Request a Meeting →</a>
           </div>
         </div>
 
@@ -82,11 +82,7 @@ export default function Science() {
             <div>
               <span className="eyebrow" style={{ color: 'var(--g-400)' }}>Satiety &amp; GLP-1 Pathway Support*</span>
               <h3>The metabolic differentiator no isolate can replicate.</h3>
-              <p>GLP-1 is the biological target of the fastest-growing class of pharmaceutical interventions in metabolic health. Pear Foods delivers satiety and GLP-1* pathway alignment through food architecture — through four structural mechanisms that are architecturally not possible in any extracted protein format.</p>
-            </div>
-            <div>
-              <p>GLP-1 (Glucagon-Like Peptide-1) is secreted by L-cells concentrated in the distal small intestine and colon. It regulates postprandial glucose, satiety signaling, and gastric emptying rate. Protein isolates are fully absorbed in the proximal intestine — the nutrient signal never reaches the L-cells.</p>
-              <p>The Pear Foods matrix changes where and how nutrients arrive. The result is a food ingredient that mechanistically supports the same biological pathway — without pharmacology, additives, or ultra-processing.</p>
+              <p>GLP-1 is the biological target of the fastest-growing class of pharmaceutical interventions in metabolic health. Pear Foods delivers Satiety and GLP-1* pathway alignment through food architecture, not pharmacology — through four structural mechanisms that are architecturally not possible in any extracted protein format.</p>
             </div>
           </div>
           <div className="satiety-mechs">

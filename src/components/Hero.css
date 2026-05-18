@@ -63,7 +63,7 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--g-600);
-  margin-bottom: 28px;
+  margin-bottom: 48px;
 }
 .hero-label::before {
   content: '';

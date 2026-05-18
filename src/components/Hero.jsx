@@ -3,7 +3,7 @@ import heroTwoUrl from '../../hero_2.png'
 import './Hero.css'
 
 const stats = [
-  { num: '100%', label: 'Protein retention' },
+  { num: '100%', label: '100% protein retention' },
   { num: '87%', label: 'PDCAAS digestibility' },
   { num: '94%', label: 'Trypsin inhibitor reduction' },
   { num: '75%', label: 'Raffinose reduction' },

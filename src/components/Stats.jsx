@@ -10,9 +10,9 @@ const highlights = [
 ]
 
 const rows = [
-  { num: '100%',     name: 'Protein Retention',          desc: 'Near-zero protein loss vs raw control — confirmed independently by Dumas nitrogen analysis and proximate analysis. Every downstream claim rests on this foundation.' },
+  { num: '100%',     name: 'Protein Retention',          desc: 'Near-zero protein loss vs raw control — confirmed independently by Dumas nitrogen analysis and proximate analysis.' },
   { num: '87%',      name: 'PDCAAS Digestibility',       desc: 'Top of the whole-food legume digestibility range — achieved inside a preserved food matrix, without extraction. This combination is rare.' },
-  { num: '6.4g/100g',name: 'Crude Fiber',                desc: 'Unchanged from the raw control. While every isolate strips fiber out, Pear Foods preserves it entirely — because nothing is removed.' },
+  { num: '6.4g/100g',name: 'Crude Fiber',                desc: 'Unchanged from the raw control. While every isolate strips fiber out, Pear Foods preserves it entirely.' },
   { num: '93.6%',    name: 'Trypsin Inhibitor Reduction',desc: 'Near-complete inactivation of the primary legume digestibility barrier. The mechanistic foundation beneath the 87% PDCAAS score. No chemical treatment required.' },
   { num: '75%',      name: 'Raffinose Reduction',        desc: 'Reduction in gas-forming oligosaccharides — raffinose (−75%), stachyose (−39.2%), verbascose (−58.3%). Less bloating and GI discomfort for consumers.' },
 ]

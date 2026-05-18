@@ -36,7 +36,11 @@ export default function Contact() {
     if (!form.firstName.trim()) e.firstName = true
     if (!form.lastName.trim()) e.lastName = true
     if (!form.company.trim()) e.company = true
+    if (!form.jobTitle.trim()) e.jobTitle = true
     if (!form.email.trim() || !/\S+@\S+\.\S+/.test(form.email)) e.email = true
+    if (!form.phone.trim()) e.phone = true
+    if (!form.category) e.category = true
+    if (!form.message.trim()) e.message = true
     return e
   }
 
@@ -77,11 +81,11 @@ export default function Contact() {
           <div className="contact-heading fade-up">
             <span className="eyebrow">Request a Meeting</span>
             <h2 className="section-title">
-              Ready to formulate with<br />real whole food protein<br /><em>through Pear Foods?</em>
+              Ready to formulate with<br />real whole food protein<br /><em>through Pear Foods Legume Protein Technology?</em>
             </h2>
           </div>
           <p className="contact-sub fade-up">
-            Request a meeting or schedule a technical conversation with our team. You can also email us at:
+            Request a meeting with our team. Email us at:
           </p>
           <div className="contact-email-line fade-up">
             <a href="mailto:hello@pearfoods.com">hello@pearfoods.com</a>
@@ -99,42 +103,42 @@ export default function Contact() {
                 <div className="contact-grid">
                   <div className="contact-field">
                     <label className="contact-label" htmlFor="firstName">First Name *</label>
-                    <input id="firstName" className={inputClass('firstName')} type="text" placeholder="Jane" value={form.firstName} onChange={set('firstName')} onFocus={clearErr('firstName')} required />
+                    <input id="firstName" className={inputClass('firstName')} type="text" placeholder="" value={form.firstName} onChange={set('firstName')} onFocus={clearErr('firstName')} required />
                   </div>
                   <div className="contact-field">
                     <label className="contact-label" htmlFor="lastName">Last Name *</label>
-                    <input id="lastName" className={inputClass('lastName')} type="text" placeholder="Smith" value={form.lastName} onChange={set('lastName')} onFocus={clearErr('lastName')} required />
+                    <input id="lastName" className={inputClass('lastName')} type="text" placeholder="" value={form.lastName} onChange={set('lastName')} onFocus={clearErr('lastName')} required />
                   </div>
                   <div className="contact-field">
                     <label className="contact-label" htmlFor="company">Company *</label>
-                    <input id="company" className={inputClass('company')} type="text" placeholder="Acme Nutrition Co." value={form.company} onChange={set('company')} onFocus={clearErr('company')} required />
+                    <input id="company" className={inputClass('company')} type="text" placeholder="" value={form.company} onChange={set('company')} onFocus={clearErr('company')} required />
                   </div>
                   <div className="contact-field">
-                    <label className="contact-label" htmlFor="jobTitle">Title</label>
-                    <input id="jobTitle" className="contact-input" type="text" placeholder="R&D Director" value={form.jobTitle} onChange={set('jobTitle')} />
+                    <label className="contact-label" htmlFor="jobTitle">Title *</label>
+                    <input id="jobTitle" className={inputClass('jobTitle')} type="text" placeholder="" value={form.jobTitle} onChange={set('jobTitle')} onFocus={clearErr('jobTitle')} required />
                   </div>
                   <div className="contact-field full">
                     <label className="contact-label" htmlFor="companyAddress">Company Address</label>
-                    <input id="companyAddress" className="contact-input" type="text" placeholder="123 Innovation Blvd, Chicago, IL 60601" value={form.companyAddress} onChange={set('companyAddress')} />
+                    <input id="companyAddress" className="contact-input" type="text" placeholder="" value={form.companyAddress} onChange={set('companyAddress')} />
                   </div>
                   <div className="contact-field">
                     <label className="contact-label" htmlFor="email">Work Email *</label>
-                    <input id="email" className={inputClass('email')} type="email" placeholder="jane@company.com" value={form.email} onChange={set('email')} onFocus={clearErr('email')} required />
+                    <input id="email" className={inputClass('email')} type="email" placeholder="" value={form.email} onChange={set('email')} onFocus={clearErr('email')} required />
                   </div>
                   <div className="contact-field">
-                    <label className="contact-label" htmlFor="phone">Phone Number</label>
-                    <input id="phone" className="contact-input" type="tel" placeholder="+1 (312) 555-0000" value={form.phone} onChange={set('phone')} />
+                    <label className="contact-label" htmlFor="phone">Phone Number *</label>
+                    <input id="phone" className={inputClass('phone')} type="tel" placeholder="" value={form.phone} onChange={set('phone')} onFocus={clearErr('phone')} required />
                   </div>
                   <div className="contact-field full">
-                    <label className="contact-label" htmlFor="category">Category of Interest</label>
-                    <select id="category" className="contact-select" value={form.category} onChange={set('category')}>
+                    <label className="contact-label" htmlFor="category">Category of Interest *</label>
+                    <select id="category" className={`contact-select${errors.category ? ' input-error' : ''}`} value={form.category} onChange={set('category')} onFocus={clearErr('category')} required>
                       <option value="" disabled>Select a category...</option>
                       {categories.map(c => <option key={c}>{c}</option>)}
                     </select>
                   </div>
                   <div className="contact-field full">
-                    <label className="contact-label" htmlFor="message">Message</label>
-                    <textarea id="message" className="contact-textarea" placeholder="Tell us about your project or what you'd like to discuss..." value={form.message} onChange={set('message')} />
+                    <label className="contact-label" htmlFor="message">Message *</label>
+                    <textarea id="message" className={`contact-textarea${errors.message ? ' input-error' : ''}`} placeholder="" value={form.message} onChange={set('message')} onFocus={clearErr('message')} required />
                   </div>
                 </div>
 

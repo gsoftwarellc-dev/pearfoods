@@ -7,10 +7,6 @@ const rows = [
   ['Satiety & GLP-1 pathway support*',  '✓ Structural',     '✗ Absent',         '✗ Absent'],
   ['Clean label / no additives',        '✓ Confirmed',      '✗ Often no',       '✗ Often no'],
   ['Minimally processed',               '✓ Confirmed',      '✗ No',             '✗ No'],
-  ['Oligosaccharide reduction',         '✓ 39–75%',         'Variable',         'Variable'],
-  ['Antinutrient inactivation',         '✓ 93.6% trypsin',  'Variable',         'Variable'],
-  ['Macronutrient content',             '✓ <2% variance',   'Partial loss',     'Significant loss'],
-  ['Essential amino acids',             '✓ All intact',     'Partial',          'Variable'],
 ]
 
 export default function Comparison() {
@@ -31,8 +27,7 @@ export default function Comparison() {
     <section id="comparison" className="comparison-section" ref={sectionRef}>
       <div className="container">
         <span className="eyebrow">Competitive Comparison</span>
-        <h2 className="section-title fade-up">Your isolate can&rsquo;t do <em>this.</em></h2>
-        <p className="section-lead fade-up">The same protein claim. Fundamentally different biology. Only one of them preserves what matters.</p>
+        <h2 className="section-title fade-up">Isolates can&rsquo;t do this. <em>Ours can.</em></h2>
 
         <div className="comp-table-wrap fade-up">
           <table className="comp-table">
