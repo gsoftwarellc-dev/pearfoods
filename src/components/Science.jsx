@@ -5,15 +5,15 @@ const methods = [
   { num: '01 · Dumas Nitrogen Analysis', title: '100% Protein Retention', badge: 'Zero processing loss', body: 'The global regulatory standard for protein quantification confirms zero protein loss during processing. Independently corroborated by proximate analysis.' },
   { num: '02 · PDCAAS In Vitro Digestibility', title: '87% Digestibility Score', badge: 'Top of whole-food range', body: '87% PDCAAS for red lentils — at the top of the in vitro digestibility scores for whole legumes, achieved inside a preserved food matrix without extraction.' },
   { num: '03 · PDCAAS Amino Acid Profile', title: 'All Essential Amino Acids Intact', badge: 'Including lysine', body: 'Every essential amino acid — including lysine, the first casualty of heat processing — is preserved identically to the raw control. Leucine and arginine remain intact.' },
-  { num: '04 · Antinutritional Factor Panel', title: 'Near-Complete ANF Inactivation', badge: '93.6% trypsin reduction', body: 'Trypsin inhibitor −93.6%. Phytic acid −41.5%. Tannins −35.9%. All without chemical treatment. Primary bioavailability barriers eliminated. Clean-label standard maintained.' },
-  { num: '05 · Carbohydrate Fraction', title: 'Oligosaccharide Reduction', badge: 'Raffinose −75%', body: 'Raffinose −75%. Stachyose −39.2%. Verbascose −58.3%. Gas-forming fraction dramatically reduced. Total starch unchanged at 41.0g/100g. Matrix preserved; bloating reduced.' },
+  { num: '04 · Antinutritional Factor (ANF) Panel', title: 'Near-Complete ANF Inactivation', badge: '93.6% trypsin reduction', body: 'Trypsin inhibitor −93.6%. All without chemical treatment. Primary bioavailability barriers eliminated. Clean-label standard maintained.' },
+  { num: '05 · Carbohydrate Fraction', title: 'Oligosaccharide Reduction', badge: 'Raffinose −75%', body: 'Raffinose −75%. Gas-forming fraction dramatically reduced. Matrix preserved; bloating reduced.' },
 ]
 
 const mechs = [
-  { title: 'Delayed Gastric Emptying', body: 'The FTIR-confirmed gel network increases viscosity in the upper GI tract, slowing gastric emptying and extending luminal nutrient presence — a primary L-cell stimulus.' },
-  { title: 'Distal Nutrient Delivery', body: '27% less solubilization means nutrients continue to the distal ileum intact, triggering sustained GLP-1 release via the ileal-brake mechanism where L-cell density is highest.' },
-  { title: 'Intact Secretagogue Amino Acids', body: 'Leucine and arginine — preserved per PDCAAS — are direct chemical triggers for L-cell GLP-1 secretion when they arrive at the distal gut. The matrix delivers them there intact.' },
-  { title: 'Structured Carbohydrate Presentation', body: 'Gelatinized starch bound within the protein matrix presents as a structured substrate — producing a slower, sustained glucose signal that maximizes GLP-1 vs insulin response ratio.' },
+  { title: 'Delayed Gastric Emptying', body: 'Confirmed with FTIR' },
+  { title: 'Distal Nutrient Delivery', body: 'Confirmed with less solubilization' },
+  { title: 'Intact Secretagogue Amino Acids', body: 'Confirmed with PDCAAS Analysis' },
+  { title: 'Structured Carbohydrate Presentation', body: 'Confirmed with Scanning Electron Microscopy' },
 ]
 
 export default function Science() {
@@ -42,7 +42,7 @@ export default function Science() {
           <div>
             <h2 className="section-title fade-up">Ten methods.<br />One <em>preserved</em><br />macro structure.</h2>
             <p className="science-body">The global protein market has optimized for extraction efficiency — and lost what matters most. Concentrates and isolates destroy the food matrix: the physical co-structure of protein, fiber, starch, and micronutrients that controls how nutrients are released and absorbed in the gut.</p>
-            <p className="science-body">Pear Foods preserves it. Our proprietary process creates a protein-starch co-gel matrix in which all macronutrients remain physically bound together — behaving in the gut like a structured whole food, not a dissolved powder.</p>
+            <p className="science-body">Pear Foods preserves it. Our proprietary process creates a co-gel matrix in which all macronutrients remain physically bound together — behaving in the gut like a structured whole food, not a dissolved powder.</p>
             <div className="science-callout fade-up">
               <p>"Protein isolates are absorbed within the proximal 30–50 cm of the small intestine. L-cells are concentrated in the distal <em>200+ cm</em>. The nutrient signal never reaches them."</p>
             </div>
@@ -93,7 +93,7 @@ export default function Science() {
               </div>
             ))}
           </div>
-          <p className="satiety-disclaimer">* Satiety and glycemic response pathway alignment is mechanistically supported by structural and compositional data. GLP-1 validation needed. Direct human clinical validation is in progress.</p>
+          <p className="satiety-disclaimer">* Satiety and glycemic response pathway alignment is mechanistically supported by structural and compositional data. GLP-1 validation needed.</p>
         </div>
       </div>
     </section>

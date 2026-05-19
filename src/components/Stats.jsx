@@ -5,7 +5,7 @@ const highlights = [
   { num: '100%', name: 'Protein Retention', sub: 'vs raw control (Dumas)' },
   { num: '87%',  name: 'PDCAAS Digestibility', sub: 'Red lentils, whole-food range' },
   { num: '6.4g', name: 'Crude Fiber / 100g', sub: 'Unchanged from raw control' },
-  { num: '93.6%',name: 'Trypsin Inhibitor ↓', sub: 'No chemical treatment' },
+  { num: '93.6%',name: 'Trypsin Inhibitor Reduced', sub: 'No chemical treatment' },
   { num: '75%',  name: 'Raffinose Reduction', sub: 'Less bloating & GI discomfort' },
 ]
 
@@ -14,7 +14,7 @@ const rows = [
   { num: '87%',      name: 'PDCAAS Digestibility',       desc: 'Top of the whole-food legume digestibility range — achieved inside a preserved food matrix, without extraction. This combination is rare.' },
   { num: '6.4g/100g',name: 'Crude Fiber',                desc: 'Unchanged from the raw control. While every isolate strips fiber out, Pear Foods preserves it entirely.' },
   { num: '93.6%',    name: 'Trypsin Inhibitor Reduction',desc: 'Near-complete inactivation of the primary legume digestibility barrier. The mechanistic foundation beneath the 87% PDCAAS score. No chemical treatment required.' },
-  { num: '75%',      name: 'Raffinose Reduction',        desc: 'Reduction in gas-forming oligosaccharides — raffinose (−75%), stachyose (−39.2%), verbascose (−58.3%). Less bloating and GI discomfort for consumers.' },
+  { num: '75%',      name: 'Raffinose Reduction',        desc: 'Reduction in gas-forming oligosaccharides — raffinose (−75%). Less bloating and GI discomfort for consumers.' },
 ]
 
 export default function Stats() {

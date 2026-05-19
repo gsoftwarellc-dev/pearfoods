@@ -35,7 +35,7 @@
   padding: 7px 14px; display: inline-block; font-size: 15px;
 }
 .comp-no { color: rgba(185,40,30,0.85); font-size: 15px; font-weight: 500; }
-.comp-neutral { color: var(--ink-3); font-size: 15px; font-weight: 500; }
+.comp-neutral { color: rgba(185,40,30,0.85); font-size: 15px; font-weight: 500; }
 
 .comp-footnote { font-size: 12px; color: var(--ink-3); font-style: italic; margin-bottom: 44px; }
 

@@ -36,7 +36,7 @@ export default function Applications() {
       <div className="container">
         <span className="eyebrow">Platform Applications</span>
         <h2 className="section-title fade-up">One ingredient.<br /><em>Three</em> high-growth categories.</h2>
-        <p className="section-lead fade-up">Unique positioning in every channel. The same validated platform — for different applications.</p>
+        <p className="section-lead fade-up">Unique positioning in every channel. The same validated platform — for<br />different applications.</p>
 
         <div className="apps-grid">
           {apps.map(({ icon, title, body }) => (

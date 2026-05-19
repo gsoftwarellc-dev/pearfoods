@@ -18,7 +18,6 @@ const tableRows = [
   ['PDCAAS Digestibility',         '87%',           'Baseline'],
   ['Trypsin Inhibitor (TIU/mg)',   '0.18 ± 0.10',  '2.83 ± 0.10'],
   ['Raffinose (g/100g)',           '0.10 ± 0.05',  '0.40 ± 0.05'],
-  ['Stachyose (g/100g)',           '1.10 ± 0.05',  '1.81 ± 0.07'],
 ]
 
 export default function Ingredient() {
@@ -57,14 +56,14 @@ export default function Ingredient() {
             <div className="nutrient-card">
               <div className="nutrient-card-header">
                 <h4>Compositional Data</h4>
-                <p>Based on Red Lentil — Pear Foods vs Raw Control</p>
+                <p>Based on Red Lentil — Pear Foods Technology Processed Legume vs Raw Control</p>
               </div>
               <div className="nutrient-table-scroll">
                 <table className="nutrient-table">
                   <thead>
                     <tr>
                       <th>Parameter</th>
-                      <th>Pear Foods</th>
+                      <th>Pear Foods Technology Processed Legume</th>
                       <th className="align-right">Raw Control</th>
                     </tr>
                   </thead>
