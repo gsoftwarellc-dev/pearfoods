@@ -1,6 +1,4 @@
 .hero {
-  height: 100vh;
-  height: 100svh;
   min-height: 100vh;
   min-height: 100svh;
   padding-top: 78px;
@@ -432,8 +430,6 @@
 
 @media (max-width: 960px) {
   .hero {
-    height: 100vh;
-    height: 100svh;
     min-height: 100vh;
     min-height: 100svh;
   }
@@ -517,8 +513,8 @@
 }
 
 @media (max-height: 720px) {
-  .hero-main { padding-bottom: 28px; }
-  .hero-label { margin-bottom: 14px; }
+  .hero-main { padding-bottom: 28px; min-height: unset; }
+  .hero-label { margin-bottom: 10px; }
   .hero-headline {
     font-size: clamp(38px, 8vh, 64px);
     margin-bottom: 14px;

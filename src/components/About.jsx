@@ -42,7 +42,7 @@ export default function About() {
         <div className="about-grid">
           <div>
             <h2 className="section-title fade-up">Where clean label food meets<br /><em>functional science.</em></h2>
-            <p className="about-body fade-up">Pear Foods is a food innovation and legume protein technology company. We have developed a fundamentally new category of legume-based protein ingredient — one that delivers the protein quality and digestibility of a concentrate, with the metabolic architecture and whole-food integrity that no isolate or concentrate can replicate.</p>
+            <p className="about-body fade-up">Pear Foods is a clean-label food innovation and legume protein technology company. We have developed a fundamentally new category of legume-based protein ingredient — one that delivers the protein quality and digestibility of a concentrate, with the metabolic architecture and whole-food integrity that no isolate or concentrate can replicate.</p>
             <p className="about-body fade-up">Our proprietary process preserves the essential macro structure of the whole legume: all essential amino acids intact, antinutritional factors inactivated. The result is a ready-to-consume ingredient validated across ten independent analytical methods.</p>
             <p className="about-body fade-up">Pear Foods occupies the intersection no isolate or concentrate technology can reach: the nutritional completeness of a whole food, the digestibility of a processed ingredient, and the metabolic architecture that mechanistically aligns with pathways known to support satiety and glycemic response — delivered as a minimally processed, clean-label, ready-to-consume ingredient.</p>
             <div className="mission-block fade-up">

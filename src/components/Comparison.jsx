@@ -9,8 +9,6 @@ const rows = [
   ['Minimally processed',               '✓ Confirmed',      '✗ No',             '✗ No'],
   ['Oligosaccharide reduction',         '✓ 39–75%',         'Variable',         'Variable'],
   ['Antinutrient inactivation',         '✓ 93.6% trypsin',  'Variable',         'Variable'],
-  ['Macronutrient content',             '✓ <2% variance',   'Partial loss',     'Significant loss'],
-  ['Essential amino acids',             '✓ All intact',     'Partial',          'Variable'],
 ]
 
 export default function Comparison() {
