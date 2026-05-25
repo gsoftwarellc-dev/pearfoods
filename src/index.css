@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap');
+
 /* ── Reset & Base ─────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
+  /* Global Impact page variables */
+  --green-dark:   #1C3A2B;
+  --green-mid:    #2C5F2D;
+  --green-light:  #97BC62;
+  --green-pale:   #EFF4E8;
+  --slate:        #3D4A3E;
+  --muted:        #6B7A6C;
   --g-900: #062214;
   --g-800: #0F3D26;
   --g-700: #1A5C38;
@@ -25,8 +34,8 @@
   --surface-2: #F3FAF6;
   --surface-3: #E8F5EF;
 
-  --font-display: Arial, Helvetica, sans-serif;
-  --font-body:    Arial, Helvetica, sans-serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'DM Sans', Arial, sans-serif;
 
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 
@@ -166,4 +175,43 @@ section { scroll-margin-top: 78px; }
 @media (max-width: 960px) {
   .container { padding: 0 24px; }
   .callout-block { padding: 32px 28px; }
+}
+
+/* ── Scroll to top (fixed) ────────────────────────────────────────────────── */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 200;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(29,158,117,0.4);
+  background: rgba(6,34,20,0.85);
+  backdrop-filter: blur(8px);
+  color: var(--g-400);
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(14,28,21,0.25);
+  transition: background 0.2s, border-color 0.2s, transform 0.2s, color 0.2s;
+}
+.scroll-top-btn:hover {
+  background: var(--g-600);
+  border-color: var(--g-600);
+  color: var(--white);
+  transform: translateY(-3px);
+}
+
+/* ── Scroll reveal (used by Global Impact page) ───────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
 }

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import logoUrl from '../../logo.png'
 import './Footer.css'
 
@@ -31,6 +32,7 @@ export default function Footer() {
             <ul>
               <li><a href="#applications" onClick={e => scroll(e, '#applications')}>Applications</a></li>
               <li><a href="#about" onClick={e => scroll(e, '#about')}>About</a></li>
+              <li><Link to="/global-impact">Global Impact</Link></li>
               <li><a href="#contact" onClick={e => scroll(e, '#contact')}>Request a Meeting</a></li>
               <li><a href="mailto:hello@pearfoods.com">hello@pearfoods.com</a></li>
             </ul>

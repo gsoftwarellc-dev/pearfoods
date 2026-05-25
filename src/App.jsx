@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Why from './components/Why'
@@ -9,23 +10,40 @@ import Applications from './components/Applications'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import GlobalImpact from './pages/GlobalImpact'
+
+function HomePage() {
+  return (
+    <>
+      <Hero />
+      <Why />
+      <Stats />
+      <Science />
+      <Ingredient />
+      <Comparison />
+      <Applications />
+      <About />
+      <Contact />
+    </>
+  )
+}
 
 export default function App() {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <main>
-        <Hero />
-        <Why />
-        <Stats />
-        <Science />
-        <Ingredient />
-        <Comparison />
-        <Applications />
-        <About />
-        <Contact />
-      </main>
+      <button
+        className="scroll-top-btn"
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        aria-label="Back to top"
+      >
+        ↑
+      </button>
+      <Routes>
+        <Route path="/" element={<main><HomePage /></main>} />
+        <Route path="/global-impact" element={<GlobalImpact />} />
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   )
 }

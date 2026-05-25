@@ -2,7 +2,7 @@
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  padding: 0 48px;
+  padding: 0 32px;
   height: 78px;
   display: flex;
   align-items: center;
@@ -30,15 +30,17 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 20px;
   list-style: none;
+  flex-wrap: nowrap;
 }
 .nav-links a {
-  font-size: 15px;
+  font-size: 13.5px;
   font-weight: 500;
   color: var(--ink-3);
   text-decoration: none;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
   transition: color 0.2s;
 }
 .nav-links a:hover,

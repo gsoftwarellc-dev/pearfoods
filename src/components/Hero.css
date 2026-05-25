@@ -84,7 +84,7 @@
 }
 .hero-headline em { font-style: italic; font-weight: 700; color: var(--g-600); }
 
-.hero-sub {
+.hero-main .hero-sub {
   font-size: 16px;
   color: var(--ink-2);
   line-height: 1.72;
