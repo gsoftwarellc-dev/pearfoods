@@ -35,29 +35,21 @@ export default function GlobalImpact() {
       {/* ══ MISSION (Section 2) ═══════════════════════════════════════════
           Change: replace quote box content with the text from screenshot 2b  */}
       <section className="mission">
-        <div className="reveal">
+        <div className="mission-text reveal">
           <p className="mission-label">Our Mission</p>
-          <h2>Preserving what whole foods have always contained</h2>
-          <p>
-            Pear Foods preserves the full nutritional power of legumes and delivers it as a
-            minimally processed, ready-to-use ingredient. Legumes are the world&apos;s most
-            affordable, abundant, and environmentally efficient protein source — yet conventional
-            processing destroys the very matrix that makes them nutritionally valuable.
-          </p>
-          <br />
-          <p>
-            Pear Foods changes that, making whole-food protein nutrition commercially viable at
-            scale and strengthening both human health and the resilience of the global food system
-            at the same time.
-          </p>
-        </div>
-
-        {/* Content 2 from screenshot 2b replaces the quote box (content 1) */}
-        <div className="mission-quote reveal">
-          <blockquote>
+          <blockquote className="mission-statement">
             Preserving nature&apos;s nutritional integrity to nourish people and build a more{' '}
             <em>resilient, sustainable</em> food system for the planet.
           </blockquote>
+        </div>
+
+        <div className="mission-quote reveal">
+          <span className="mission-quote-mark">&ldquo;</span>
+          <p className="mission-quote-text">
+            &ldquo;Better nutrition. Lower impact. No compromise. A platform that makes legume protein
+            work better, digest better, and perform better — for people and for the planet.&rdquo;
+          </p>
+          <p className="mission-quote-attr">Pear Foods &nbsp;·&nbsp; Legume Protein Technology</p>
         </div>
       </section>
 
@@ -119,10 +111,9 @@ export default function GlobalImpact() {
             <div className="card-stat">87%</div>
             <h3>Digestibility Unlocked</h3>
             <p>
-              Protein present but inaccessible delivers no nutritional value. A 93.6% reduction
-              in trypsin inhibitor activity — the primary digestibility barrier — drives an 87%
-              PDCAAS in vitro digestibility score, placing Pear Foods at the top tier for
-              whole-food legume ingredients.
+              A 93.6% reduction in trypsin inhibitor activity — the primary digestibility barrier —
+              drives an 87% PDCAAS in vitro digestibility score, placing Pear Foods at the top tier
+              for whole-food legume ingredients.
             </p>
           </div>
           <div className="impact-card reveal">
@@ -167,12 +158,12 @@ export default function GlobalImpact() {
           <div className="section-number">02</div>
           <p className="section-tag">Metabolic Impact</p>
           <h2>Supporting the Pathways That Matter</h2>
-          <p className="lead">
+          <p className="lead lead-full">
             Beyond macronutrient retention, the Pear Foods matrix is structurally aligned with the
             metabolic pathways that govern how the body processes and responds to food — pathways
             that extraction-based processing systematically bypasses.
           </p>
-          <p className="metabolic-body">
+          <p className="metabolic-body lead-full">
             GLP-1* (Glucagon-Like Peptide-1) governs postprandial glucose regulation, satiety
             signalling, gastric emptying rate, and insulin sensitivity. It is the biological target
             of the fastest-growing class of metabolic health pharmaceuticals in history. Pear Foods
@@ -183,7 +174,6 @@ export default function GlobalImpact() {
 
         <div className="mechanism-grid reveal">
           <div className="mechanism-card">
-            <p className="mechanism-confirmed">Confirmed with FTIR Spectroscopy</p>
             <h4>Gel Network &amp; Gastric Emptying</h4>
             <p>
               FTIR-confirmed starch-protein co-gel network increases luminal viscosity, slowing
@@ -192,7 +182,6 @@ export default function GlobalImpact() {
             </p>
           </div>
           <div className="mechanism-card">
-            <p className="mechanism-confirmed">Confirmed with less solubilization</p>
             <h4>Distal Nutrient Delivery</h4>
             <p>
               27% less solubilization versus raw control means nutrients reach the distal ileum
@@ -201,7 +190,6 @@ export default function GlobalImpact() {
             </p>
           </div>
           <div className="mechanism-card">
-            <p className="mechanism-confirmed">Confirmed with PDCAAS Amino Acid profile</p>
             <h4>Intact GLP-1 Secretagogues</h4>
             <p>
               Leucine and arginine — the primary amino acid triggers for L-cell GLP-1 secretion —
@@ -210,7 +198,6 @@ export default function GlobalImpact() {
             </p>
           </div>
           <div className="mechanism-card">
-            <p className="mechanism-confirmed">Confirmed with Scanning Electron Microscopy</p>
             <h4>Structured Carbohydrate Presentation</h4>
             <p>
               Gelatinized starch bound within the protein matrix produces a slower, more sustained
@@ -249,16 +236,6 @@ export default function GlobalImpact() {
             <span className="bar-label">Raffinose</span>
             <div className="bar-track"><div className="bar-fill" style={{ width: '75%', animationDelay: '0.1s' }} /></div>
             <span className="bar-val">−75%</span>
-          </div>
-          <div className="bar-row">
-            <span className="bar-label">Verbascose</span>
-            <div className="bar-track"><div className="bar-fill" style={{ width: '58.3%', animationDelay: '0.25s' }} /></div>
-            <span className="bar-val">−58%</span>
-          </div>
-          <div className="bar-row">
-            <span className="bar-label">Stachyose</span>
-            <div className="bar-track"><div className="bar-fill" style={{ width: '39.2%', animationDelay: '0.4s' }} /></div>
-            <span className="bar-val">−39%</span>
           </div>
         </div>
 
@@ -337,11 +314,11 @@ export default function GlobalImpact() {
           <div className="section-number">05</div>
           <p className="section-tag">Systemic Impact</p>
           <h2>Reshaping How Plant Protein Works</h2>
-          <p className="lead">
+          <p className="lead lead-full">
             Pear Foods addresses two of the most pressing challenges in global nutrition
             simultaneously: the degradation of plant protein through industrial processing, and the
-            need for a food system built on ingredients that are both nutritionally complete and
-            environmentally sustainable.
+            need for a food system built on ingredients that preserve macro structure and are both
+            nutritionally complete and environmentally sustainable.
           </p>
         </div>
 
@@ -366,7 +343,7 @@ export default function GlobalImpact() {
           <div className="impact-card reveal">
             <h3>Metabolic Architecture of a Functional Food</h3>
             <p>
-              Analytical methods confirmed gel matrix, distal nutrient delivery, and intact GLP-1
+              Analytical methods confirmed gel matrix, distal nutrient delivery*, and intact GLP-1
               secretagogue amino acids — structural alignment with metabolic pathways that no
               isolate can replicate.
             </p>
@@ -391,7 +368,7 @@ export default function GlobalImpact() {
           <em>resilient, sustainable</em> food system for the planet.
         </h2>
         <p>Better nutrition. Lower impact. No compromise.</p>
-        <p className="closing-disclaimer">
+        <p className="closing-disclaimer closing-disclaimer-full">
           * Claims regarding GLP-1 pathway support are based on structural and mechanistic evidence
           from in vitro analysis. Direct human clinical validation is required to confirm
           physiological effects. All other claims are supported by independent analytical validation
