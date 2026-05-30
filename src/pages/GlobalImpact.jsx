@@ -70,7 +70,7 @@ export default function GlobalImpact() {
           </div>
           <div className="stat-item reveal">
             <div className="stat-val">93.6%</div>
-            <div className="stat-label">Trypsin Inhibitor ↓</div>
+            <div className="stat-label">Reduced Trypsin Inhibitor</div>
             <div className="stat-sub">Primary barrier eliminated</div>
           </div>
           <div className="stat-item reveal">
@@ -120,7 +120,7 @@ export default function GlobalImpact() {
             <div className="card-stat">6.4g</div>
             <h3>Fiber Preserved and Functional</h3>
             <p>
-              Crude fiber is maintained at 6.4 g/100g versus 6.3 g/100g in the raw control. The
+              Crude fiber is maintained at 6.4 g/100g versus 6.3 g/100g in the raw control (Red Lentils). The
               full fiber fraction is intact and structurally co-located with protein and starch —
               functioning as it does in a whole food, not as an isolated additive.
             </p>
@@ -134,7 +134,7 @@ export default function GlobalImpact() {
               The platform is validated across ten methods — Dumas nitrogen, PDCAAS, SEM, FTIR
               spectroscopy, water extraction, proximate analysis, carbohydrate profiling, and
               antinutritional factor panels — each contributing a distinct, coherent validation
-              of the Pear Food technology.
+              of the Pear Foods technology.
             </p>
           </div>
         </div>
@@ -164,10 +164,10 @@ export default function GlobalImpact() {
             that extraction-based processing systematically bypasses.
           </p>
           <p className="metabolic-body lead-full">
-            GLP-1* (Glucagon-Like Peptide-1) governs postprandial glucose regulation, satiety
+            GLP-1 (Glucagon-Like Peptide-1) governs postprandial glucose regulation, satiety
             signalling, gastric emptying rate, and insulin sensitivity. It is the biological target
             of the fastest-growing class of metabolic health pharmaceuticals in history. Pear Foods
-            delivers structural alignment with GLP-1* pathways through food architecture, not
+            delivers structural alignment with GLP-1 pathways through food architecture, not
             pharmacology.
           </p>
         </div>
@@ -176,33 +176,25 @@ export default function GlobalImpact() {
           <div className="mechanism-card">
             <h4>Gel Network &amp; Gastric Emptying</h4>
             <p>
-              FTIR-confirmed starch-protein co-gel network increases luminal viscosity, slowing
-              gastric emptying and extending the duration of luminal nutrient presence — a primary
-              L-cell stimulus.
+              Confirmed with FTIR
             </p>
           </div>
           <div className="mechanism-card">
             <h4>Distal Nutrient Delivery</h4>
             <p>
-              27% less solubilization versus raw control means nutrients reach the distal ileum
-              intact — precisely where GLP-1 L-cell density is highest. The nutrient signal
-              arrives where it can trigger a response.
+              Confirmed with less solubilization
             </p>
           </div>
           <div className="mechanism-card">
             <h4>Intact GLP-1 Secretagogues</h4>
             <p>
-              Leucine and arginine — the primary amino acid triggers for L-cell GLP-1 secretion —
-              are fully preserved per PDCAAS amino acid profiling. The matrix delivers the right
-              signals to the right location.
+              Confirmed with PDCAAS Analysis
             </p>
           </div>
           <div className="mechanism-card">
             <h4>Structured Carbohydrate Presentation</h4>
             <p>
-              Gelatinized starch bound within the protein matrix produces a slower, more sustained
-              glucose signal — the architecture that maximises the GLP-1 response relative to
-              insulin output.
+              Confirmed with Scanning Electron Microscopy
             </p>
           </div>
         </div>
@@ -231,7 +223,7 @@ export default function GlobalImpact() {
         </div>
 
         <div className="bar-chart reveal">
-          <p className="bar-chart-label">Oligosaccharide Reduction vs. Raw Legume</p>
+          <p className="bar-chart-label">Oligosaccharide Reduction vs. Raw Legume (RED LENTILS)</p>
           <div className="bar-row">
             <span className="bar-label">Raffinose</span>
             <div className="bar-track"><div className="bar-fill" style={{ width: '75%', animationDelay: '0.1s' }} /></div>
@@ -369,10 +361,7 @@ export default function GlobalImpact() {
         </h2>
         <p>Better nutrition. Lower impact. No compromise.</p>
         <p className="closing-disclaimer closing-disclaimer-full">
-          * Claims regarding GLP-1 pathway support are based on structural and mechanistic evidence
-          from in vitro analysis. Direct human clinical validation is required to confirm
-          physiological effects. All other claims are supported by independent analytical validation
-          across ten methods.
+          Direct human clinical validation is required to confirm physiological effects of GLP-1 pathway support. All other claims are supported by independent analytical validation across ten methods.
         </p>
       </section>
     </>
