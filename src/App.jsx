@@ -11,6 +11,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import GlobalImpact from './pages/GlobalImpact'
+import ThankYou from './pages/ThankYou'
 
 function HomePage() {
   return (
@@ -42,6 +43,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<main><HomePage /></main>} />
         <Route path="/global-impact" element={<GlobalImpact />} />
+        <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
       <Footer />
     </BrowserRouter>

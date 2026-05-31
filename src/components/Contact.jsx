@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Contact.css'
 
 const categories = [
@@ -10,7 +11,7 @@ const categories = [
 
 export default function Contact() {
   const sectionRef = useRef(null)
-  const [submitted, setSubmitted] = useState(false)
+  const navigate = useNavigate()
   const [sending, setSending] = useState(false)
   const [errors, setErrors] = useState({})
   const [form, setForm] = useState({
@@ -59,7 +60,7 @@ export default function Contact() {
     ].join('\n')
     const mailto = `mailto:hello@pearfoods.com?subject=${encodeURIComponent('New Meeting Request — Pear Foods')}&body=${encodeURIComponent(body)}`
     window.location.href = mailto
-    setTimeout(() => { setSubmitted(true); setSending(false) }, 500)
+    setTimeout(() => { setSending(false); navigate('/thank-you') }, 500)
   }
 
   const inputClass = field => `contact-input${errors[field] ? ' input-error' : ''}`
@@ -76,7 +77,7 @@ export default function Contact() {
             </h2>
           </div>
           <p className="contact-sub fade-up">
-            Request a meeting with our team.
+            Request a meeting with our team or send us a message.
           </p>
           <div className="contact-email-line fade-up">
             <span className="contact-email-label">Email us at:</span>
@@ -90,14 +91,7 @@ export default function Contact() {
           </div>
 
           <div className="contact-form-card fade-up">
-            {submitted ? (
-              <div className="form-success">
-                <div className="form-success-icon">✓</div>
-                <h4>Message Sent!</h4>
-                <p>Thank you — we'll be in touch within 1–2 business days.</p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} noValidate>
+            <form onSubmit={handleSubmit} noValidate>
                 <div className="contact-grid">
                   <div className="contact-field">
                     <label className="contact-label" htmlFor="firstName">First Name *</label>
@@ -142,12 +136,11 @@ export default function Contact() {
 
                 <div className="contact-submit-row">
                   <button type="submit" className="contact-btn" disabled={sending}>
-                    {sending ? 'Sending…' : 'Request a Meeting →'}
+                    {sending ? 'Sending…' : 'Submit'}
                   </button>
                   <p className="contact-note">We respond within 1–2 business days. All inquiries are confidential.</p>
                 </div>
               </form>
-            )}
           </div>
         </div>
       </div>

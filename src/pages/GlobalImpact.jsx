@@ -70,7 +70,7 @@ export default function GlobalImpact() {
           </div>
           <div className="stat-item reveal">
             <div className="stat-val">93.6%</div>
-            <div className="stat-label">Reduced Trypsin Inhibitor</div>
+            <div className="stat-label">Trypsin Inhibitor Reduced</div>
             <div className="stat-sub">Primary barrier eliminated</div>
           </div>
           <div className="stat-item reveal">
@@ -167,7 +167,7 @@ export default function GlobalImpact() {
             GLP-1 (Glucagon-Like Peptide-1) governs postprandial glucose regulation, satiety
             signalling, gastric emptying rate, and insulin sensitivity. It is the biological target
             of the fastest-growing class of metabolic health pharmaceuticals in history. Pear Foods
-            delivers structural alignment with GLP-1 pathways through food architecture, not
+            delivers structural alignment with GLP-1* pathways through food architecture, not
             pharmacology.
           </p>
         </div>
@@ -361,7 +361,7 @@ export default function GlobalImpact() {
         </h2>
         <p>Better nutrition. Lower impact. No compromise.</p>
         <p className="closing-disclaimer closing-disclaimer-full">
-          Direct human clinical validation is required to confirm physiological effects of GLP-1 pathway support. All other claims are supported by independent analytical validation across ten methods.
+          *Direct human clinical validation is required to confirm physiological effects of GLP-1 pathway support. All other claims are supported by independent analytical validation across ten methods.
         </p>
       </section>
     </>
