@@ -5,7 +5,7 @@ const methods = [
   { num: '01 · Dumas Nitrogen Analysis', title: '100% Protein Retention', badge: 'Zero processing loss', body: 'The global regulatory standard for protein quantification confirms zero protein loss during processing. Independently corroborated by proximate analysis.' },
   { num: '02 · PDCAAS In Vitro Digestibility', title: '87% Digestibility Score', badge: 'Top of whole-food range', body: '87% PDCAAS for red lentils — at the top of the in vitro digestibility scores for whole legumes, achieved inside a preserved food matrix without extraction.' },
   { num: '03 · PDCAAS Amino Acid Profile', title: 'All Essential Amino Acids Intact', badge: 'Including lysine', body: 'Every essential amino acid — including lysine, the first casualty of heat processing — is preserved identically to the raw control. Leucine and arginine remain intact.' },
-  { num: '04 · Antinutritional Factor (ANF) Panel', title: 'Near-Complete ANF Inactivation', badge: '93.6% trypsin reduction', body: 'Trypsin inhibitor −93.6%. All without chemical treatment. Primary bioavailability barriers eliminated. Clean-label standard maintained.' },
+  { num: '04 · Antinutritional Factor (ANF) Panel', title: 'Near-Complete ANF Inactivation', badge: '93.6% Trypsin inhibitor reduction', body: 'Trypsin inhibitor −93.6%. All without chemical treatment. Primary bioavailability barriers eliminated. Clean-label standard maintained.' },
   { num: '05 · Carbohydrate Fraction', title: 'Oligosaccharide Reduction', badge: 'Raffinose −75%', body: 'Raffinose −75%. Gas-forming fraction dramatically reduced. Matrix preserved; bloating reduced.' },
 ]
 
